@@ -1,16 +1,72 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Formulario</title>
 </head>
+
 <body>
     <form action="">
         <label>
             <span>Nombre:</span>
-            <input type="text" name="nombre" id="nombre">
+            <input type="text" name="nombre" id="nombre" required>
         </label>
+
+        <label>
+            <span>Apellido: </span>
+            <input type="text" name="apellido" id="apellido" required>
+        </label>
+
+        <label>
+            <span>Correo: </span>
+            <input type="email" name="email" id="emial" autocomplete="email" required>
+        </label>
+
+        <label>
+            <span>Fecha de nacimiento:</span>
+            <input type="date" id="fecha">
+        </label>
+
+        <label>
+            <span>Color: </span>
+            <input type="color" name="color" id="color">
+        </label>
+
+        <label>
+            <span>Calendario: </span>
+            <input type="datetime-local" name="calendario" id="calendario">
+        </label>
+
+        <input type="submit" value="Enviar">
+
+
+        <label>
+            <span>Selecciona frutas </span>
+            <select name="frutas" id="frutas">
+                <option value="manzana">manzana</option>
+                <option value="pera">pera</option>
+                <option value="platano">platano</option>
+                <option value="kiwi">kiwi</option>
+            </select>
+        </label>
+
+        
+        <label>
+            <span>Selecciona un programa:</span>
+            <input list="cursos">
+            <datalist id="cursos">
+                <option value="javascript">Javascript</option>
+                <option value="html">HTML</option>
+                <option value="css">CSS</option>
+                <option value="java">Java</option>
+
+            </datalist>
+        </label>
+
+
     </form>
 </body>
+
 </html>
