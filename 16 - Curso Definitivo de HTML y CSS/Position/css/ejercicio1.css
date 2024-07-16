@@ -1,0 +1,87 @@
+* {
+    box-sizing: border-box;
+    font-family: 'Noto Sans JP', sans-serif;
+    margin: 0;
+    padding: 0;
+
+}
+
+.container {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.card {
+    border: 10px solid #FDE265;
+    border-radius: 5px;
+    width: 300px;
+    height: 400px;
+    background-color: #CBDB96;
+    -webkit-box-shadow: 10px 10px 15px 0px rgba(0, 0, 0, 0.13);
+    -moz-box-shadow: 10px 10px 15px 0px rgba(0, 0, 0, 0.13);
+    box-shadow: 10px 10px 15px 0px rgba(0, 0, 0, 0.13);
+}
+
+.name {
+    font-size: 20px;
+    color: #333;
+    margin: 0 auto;
+    border: 2px solid #666666;
+    border-radius: 5px;
+    display: inline-block;
+    background-color: white;
+    padding: 5px 8px;
+    position: relative;
+    bottom: 26px;
+    left: 80px;
+}
+
+.card-container {
+    padding: 0 20px;
+}
+
+.bulbasaur {
+    text-align: center;
+    margin-top: -22px;
+    margin-bottom: 15px;
+}
+
+.description {
+    border: 2px solid #F1F1ED;
+    background-color: #F1F1ED;
+    border-radius: 5px;
+    text-align: left;
+    padding-top: 8px;
+    padding-right: 26px;
+    padding-bottom: 10px;
+    padding-left: 26px;
+    margin-bottom: 25px;
+}
+
+.type {
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.grass {
+    display: inline-block;
+    text-align: center;
+    background-color: #9BCC51;
+    border: 2px solid #9BCC51;
+    border-radius: 5px;
+    padding: 5px 15px;
+}
+
+.poison {
+    display: inline-block;
+    text-align: center;
+    background-color: #B97EC9;
+    border: 2px solid #B97EC9;
+    border-radius: 5px;
+    padding: 5px 15px;
+}
