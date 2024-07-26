@@ -1,36 +1,16 @@
 .contenedor{
     border: 5px solid #e1bee7;
-    background-color: white;
+    background-color: #fff1ff;
     display: grid;
-    grid-template-columns: 150px 150px 150px;
-    grid-template-rows: 75px 75px 75px;
-    place-content: center;
-    grid-template-areas: 
-        "header header header"
-        "side main main"
-        "side main main"
-    ;
+    grid-template-columns: minmax(30px, 300px) 30px 200px 60px minmax(60px,250px);
+    /* Antes */
+    grid-template-rows: repeat() 100px 100px 100px;
+    /* Despues */
+    grid-template-rows: repeat(3, auto);
 }
 
 .item{
-    font-size: 4rem;
-}
-
-.item-1{
-    border: 5px solid #f8bbd0;
-    background-color: #ffeeff;
-    grid-area: header;
-}
-
-.item-2{
-    border: 5px solid #e1bee7;
-    background-color: #fff1ff;
-    grid-area: side;
-}
-
-.item-3{
-    border: 5px solid #b2ebf2;
-    background-color: #e5ffff;
-    grid-area: main;
+    border: 5px solid #00bcd5;
+    font-size: 2rem;
 }
 
