@@ -1,16 +1,19 @@
-.contenedor{
+.contenedor-1 {
     border: 5px solid #e1bee7;
     background-color: #fff1ff;
     display: grid;
-    grid-template-columns: minmax(30px, 300px) 30px 200px 60px minmax(60px,250px);
-    /* Antes */
-    grid-template-rows: repeat() 100px 100px 100px;
-    /* Despues */
-    grid-template-rows: repeat(3, auto);
+    grid-template-columns: repeat(auto-fit,minmax(100px,1fr));
+}
+
+.contenedor-2 {
+    border: 5px solid #e1bee7;
+    background-color: #fff1ff;
+    display: grid;
+    margin-top: 100px;
+    grid-template-columns: repeat(auto-fill, minmax(100px,1fr));
 }
 
 .item{
-    border: 5px solid #00bcd5;
+    border: 5px solid #00bcd4;
     font-size: 2rem;
 }
-
