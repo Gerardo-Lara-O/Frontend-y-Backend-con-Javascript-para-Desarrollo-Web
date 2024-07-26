@@ -1,21 +1,34 @@
 .contenedor{
     border: 5px solid #e1bee7;
-    background-color: #fff1ff;
+    background-color: #38620b;
     display: grid;
     grid-auto-rows: 150px ;
-    grid-template-columns: 150px 150px 150px;
-    gap: 15px;
+    grid-template-columns: 150px 150px;
+    gap: 30px;
     height: 600px;
-    /* Podemos usar place-content para centrar ambos elementos en el contenedor */
     justify-content: center;
     align-content: center;
-    /* Con este alineamos los items */
-    place-items: end;
 }
 
 .item{
-    border: 5px solid #00bcd4;
-    font-size: 4rem;
-    
+    background-color: #abd800;
+    display: grid;
+    place-items: end;
 }
+
+.item span{
+    background-color: #5fa71c;
+    width: 30px;
+    height: 50px;
+}
+
+.center{
+    position: absolute;
+    display: grid;
+    justify-self: center;
+    align-self: center;
+    height: 30px;
+    width: 30px;
+    background-color: #1f3207;
+} 
 
