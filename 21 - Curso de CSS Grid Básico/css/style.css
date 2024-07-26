@@ -2,13 +2,52 @@
     border: 5px solid #e1bee7;
     background-color: #fff1ff;
     display: grid;
-    grid-template-rows: 100px 200px ;
-    grid-auto-columns: 100px;
+    grid-template-rows: 100px 100px 100px ;
+    grid-template-columns: 100px 100px;
     grid-auto-flow: column;
-    gap: 15px;
+    gap: 20px;
 }
 
 .item{
-    border: 5px solid #00bcd4;
     font-size: 4rem;
+    display: flex;
+    justify-content: end;
+    align-items: end;
 }
+
+span{
+    width: 20px;
+    height: 40px;
+    background-color: white;
+    font-size: 30px;
+    font-weight: bold;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+}
+
+.item1, .item4{
+    background-color: #acd900;
+}
+.item1 span, .item4 span{
+    background-color: #258300;
+}
+.item2, .item5{
+    background-color: #70bc04;
+}
+
+.item2 span, .item5 span{
+    background-color: #278200;
+}
+
+.item3, .item6{
+    background-color: #258300;
+}
+
+.item3 span, .item6 span{
+    background-color: #113900;
+}
+
+
+
