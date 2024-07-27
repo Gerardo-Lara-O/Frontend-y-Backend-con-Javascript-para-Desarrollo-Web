@@ -83,3 +83,36 @@ font-size: 2rem;
 .dishes-item__big{
     grid-area: 1 / 1 / 3 / 3;
 }
+
+.menu{
+    margin-bottom: 200px;
+}
+
+.menu-title{
+    font-size:2rem;
+    color: var(--texto);
+    font-weight: bold;
+    text-align: center;
+    margin-bottom: 50px;
+
+}
+
+.menu-grid{
+    display: grid;
+    grid-template-columns: repeat(5,minmax(100px,250px));
+    justify-content: center;
+    gap: 25px;
+}
+
+.menu-grid-item{
+    background-color: coral;
+    padding: 15px;
+    border-top-left-radius: 40px;
+    border-bottom-right-radius: 40px;
+}
+
+.menu-grid-item img{
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
