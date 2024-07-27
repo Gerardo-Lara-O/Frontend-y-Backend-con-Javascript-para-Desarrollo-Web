@@ -1,3 +1,8 @@
+:root{
+    --texto: #333;
+    --botones: #fb8c00;
+}
+
 *{
     font-family: 'Roboto', sans-serif;
 
@@ -6,4 +11,43 @@
 main{
     max-width: 1200px;
     margin: 0 auto;
+}
+
+.hero{
+    display: grid;
+    grid-template-columns: 2fr 3fr;
+    grid-auto-rows: 400px;
+    /* border-bottom: 1px solid #ddd; */
+}
+
+.hero-image{
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+
+.info{
+    align-self: center;
+}
+
+.info-title{
+    color: var(--texto);
+    font-size: 3rem;
+    font-weight: bolder;
+    margin-bottom: 24px;
+}
+
+.info-subtitle{
+    color: var(--texto);
+    font-size: 1.5rem;
+    margin-bottom: 24px;
+}
+
+.info-button{
+    border: none;
+    border-radius: 20px;
+    color: var(--texto);
+    background-color: var(--botones);
+    font-weight: bolder;
+    padding: 12px 24px;
 }
