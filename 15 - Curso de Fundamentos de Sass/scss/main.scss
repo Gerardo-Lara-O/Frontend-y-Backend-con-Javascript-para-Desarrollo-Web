@@ -6,7 +6,7 @@ $font-stack: "IBM Plex Sans", sans-serif;
 $paragraph-size: 1.5em;
 $quaternion-color: #FA9500;
 
-body{
+body {
     margin: 0px;
     padding: 0px;
     box-sizing: border-box;
@@ -14,69 +14,110 @@ body{
     font-family: $font-stack;
 }
 
-nav{
+nav {
     width: auto;
     padding: 15px;
     display: flex;
     justify-content: space-between;
     color: $primary-text-color;
-    p{
+
+    p {
         font-size: $paragraph-size;
         padding-left: 30px;
     }
-    .icons{
+
+    .icons {
         display: flex;
         gap: 15px;
 
-        button{
+        button {
             background: none;
             border-style: none;
         }
     }
 }
 
-article{
+article {
     width: auto;
     color: $primary-text-color;
     padding-left: 45px;
     padding-right: 45px;
+    padding-top: 70px;
     display: flex;
     justify-content: space-between;
 
-    .impact-section{
+    .impact-section {
         display: flex;
         flex-direction: column;
         padding-top: 50px;
         gap: 25px;
     }
-        h1{
-            font-size: 3em;
-            padding: 0px;
-            margin: 0px;
-        }
-        p{
-            font-size: $paragraph-size;
-            
-        }
-        button{
-            width: 12vw;
-            padding: 20px;
-            background-color: $quaternion-color;
-            border-style: none;
-            border-radius: 35px;
-            color: white;
-            font-size: 1em;
 
-        }
-        img{
-            width: 25vw;
-            border-radius: 19px;
-        }
+    h1 {
+        font-size: 3em;
+        padding: 0px;
+        margin: 0px;
+    }
+
+    p {
+        font-size: $paragraph-size;
+
+    }
+
+    button {
+        width: 12vw;
+        padding: 20px;
+        background-color: $quaternion-color;
+        border-style: none;
+        border-radius: 35px;
+        color: white;
+        font-size: 1em;
+
+    }
+
+    img {
+        width: 25vw;
+        border-radius: 19px;
+    }
 
 }
 
+section {
+    width: 100%;
+    height: auto;
+    padding: 60px;
 
-.footer{
+    h2 {
+        color: $primary-text-color;
+        font-size: 2em;
+    }
+
+    .healthcare {
+        h2 {
+            font-weight: 300;
+            padding-bottom: 60px;
+        }
+
+        .product-card {
+            width: 12vw;
+            height: auto;
+            background-color: $secondary-color;
+            color: $primary-text-color;
+            padding: 20px;
+            border-radius: 8px;
+
+            img {
+                width: 11vw;
+                height: auto;
+                background-image: cover;
+                border-radius: 6px;
+            }
+        }
+    }
+}
+
+
+.footer {
     background-color: $quaternion-color;
     width: 100%;
     height: 250px;
