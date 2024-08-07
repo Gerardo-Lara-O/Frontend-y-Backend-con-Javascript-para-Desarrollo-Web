@@ -187,6 +187,7 @@ section .furniture .product-card {
 }
 .gallery .gallery-images img:hover {
   transform: scale(1.1);
+  transition-duration: 0.3s;
 }
 
 .location {
