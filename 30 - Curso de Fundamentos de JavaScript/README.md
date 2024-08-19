@@ -4,3 +4,4 @@
 - 03 - tipoDeDatos.js
 - 04 - strings.js
 - 05 - claseNumber.js
+- 06 - operadoresComparacion.js
