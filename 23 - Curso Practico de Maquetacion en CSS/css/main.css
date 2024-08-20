@@ -14,6 +14,11 @@ body{
     right: 0;
 }
 
+.grid-container{
+    max-width: 980px;
+    margin: auto;
+}
+
 a{
     text-decoration: none;
     display: inline;
@@ -178,7 +183,6 @@ nav .profile-link a{
 .blogs-post-container div{
     display: grid;
     grid-template-columns: repeat(3,1fr);
-    
     gap: 20px;
 }
 
