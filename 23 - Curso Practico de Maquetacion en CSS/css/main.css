@@ -135,6 +135,10 @@ nav .profile-link a{
     grid-template-columns: 2fr 1fr;
 }
 
+.blogs-main-new h3{
+    margin-left: 40px;
+}
+
 
 .blogs-news-img-container{
     grid-column: 1;
@@ -152,6 +156,14 @@ nav .profile-link a{
     margin-bottom: 35px;
 }
 
+.blogs-button{
+    border: 1px solid #46cfac;
+    padding: 10px 15px;
+    font-size: 12px;
+}
+
+/* ultimos blogposts */
+
 .blogs-post-container{
     padding: 0 50px 40px;
 }
@@ -161,3 +173,4 @@ nav .profile-link a{
     text-align: center;
     padding-bottom: 20px;
 }
+
