@@ -129,20 +129,20 @@ nav .profile-link a{
 }
 
 /* Pagina blogs */
-.blogs-main{
+.blogs-main {
     display: grid;
 }
-
-.blogs-news-container{
+.blogs-news-container {
     background-color: #e6e9ed;
     padding: 0 50px 40px;
+}
+.blogs-main-new {
     display: grid;
     grid-template-columns: 2fr 1fr;
+    grid-template-rows: 2fr;
 }
 
-.blogs-main-new h3{
-    margin-left: 40px;
-}
+
 
 
 .blogs-news-img-container{
