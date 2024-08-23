@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        body{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        .container{
+            display: grid;
+            width: 100%;
+            height: 150px;
+            background-color: aquamarine;
+            /* Primero va rows y despues column */
+            grid-template: repeat(2,1fr) / repeat(2,1fr);
+
+        }
+
+        .container-item{
+            background-color: brown;
+            display: grid;
+            grid-template: repeat(2,1fr) / repeat(2,1fr) ;
+        }
+
+        .container-item-child{
+            background-color: aquamarine;
+        }
+
+        .container-item-child p{
+            text-align: center;
+        }
+
+
+    </style>
+    <title>Document</title>
+</head>
+
+<body>
+    <div class="container">
+        <div class="container-item">
+            <div class="container-item-child">
+                <p>Hola</p>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
