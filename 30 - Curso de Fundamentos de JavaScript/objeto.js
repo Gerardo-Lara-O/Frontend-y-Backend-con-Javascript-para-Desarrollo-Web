@@ -14,3 +14,16 @@ let persona = {
 }
 
 persona.saludar()
+
+persona.telefono = 5533223311;
+console.log(persona.telefono);
+
+persona.despedir = ()=>{
+    console.log("Adios");
+    
+};
+
+persona.despedir();
+
+// boorar propiedades de nuesto objeto
+delete persona.telefono;
