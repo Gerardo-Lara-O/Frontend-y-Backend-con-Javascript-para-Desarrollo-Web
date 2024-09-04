@@ -13,31 +13,61 @@
     <title>Platzi Travel</title>
 </head>
 
-<body>
+<body class="font-Montserrat">
     <nav></nav>
     <div id="tab_bar"></div>
     <section class="w-full h-screen ">
         <div id="home">
             <div class="w-full h-3/4">
-                <div class="w-full h-full flex flex-col absolute space-y-96 py-4 items-center "> 
-                    <input class="outline-none p-3 rounded-full shadow-sm" placeholder="San Francisco" type="search">
-                    <button class="w-48 rounded-full shadow-sm text-l text-primary font-semibold p-4 bg-white top-30 absolute">Explore More</button>
+                <div class="w-full h-full flex flex-col absolute space-y-96 py-4 items-center ">
+                    <input
+					class="lg:hidden p-3 outline-none transition duration-300 rounded-full shadow-lg focus-within:shadow-sm focus:outline-none focus:ring-2  focus:w-11/12 "
+					type="search" name="Searchbar" placeholder="San Francisco" id="">
+                    <div class=" hidden h-auto lg:w-2/5 lg:flex pb-6 ">
+                        <p class=" lg:flex text-4xl ml-16 font-bold">Encuentra más ubicaciones como esta</p>
+                    </div>
+                    <button
+                        class="bg-white text-primary w-48 h-auto p-3 lg:ml-16 rounded-full shadow-md font-semibold text-principal transition ease-in-out delay-150 bg-white hover:-translate-y-1 hover:scale-110 hover:bg-primary hover:text-white duration-300  ..."
+                        id='explore-more'>
+                        Explorar
+                    </button>
                 </div>
 
                 <div class="w-full h-full">
                     <img src="./img/sanFrancisco.jpg" alt="">
                 </div>
-                
+
             </div>
         </div>
-        <div class="p-20" id="recomendadas">
-            <div class="Card">
-                <div class="w-full h-3/5 rounded-t-lg bg-norway bg-cover"></div>
-                <div class="w-full h-2/5 bg-secondary rounded-b-lg p-4">
-                    <p class="text-white font-bold text-xl">Norway</p>
-                    <p class="text-white text-md">Beautiful landscapes</p>
+        <div class="p-6" id="recomendados">
+            <p class="text-3xl font-semibold text-primary ">Recomendados</p>
+            <div
+                class="w-auto h-80 lg:h-80 items-center mt-6 overflow-x-auto overscroll-x-contain flex space-x-4 lg:space-x-6 scrollbar">
+
+                <div class="Card">
+                    <div class="w-full h-3/5 rounded-t-lg bg-norway bg-cover"></div>
+                    <div class="w-full h-2/5 bg-secondary rounded-b-lg p-4">
+                        <p class="text-white font-bold text-xl">Norway</p>
+                        <p class="text-white text-md">Beautiful landscapes</p>
+                    </div>
                 </div>
+                <div class="Card">
+                    <div class="w-full h-3/5 rounded-t-lg bg-new_york bg-cover"></div>
+                    <div class="w-full h-2/5 bg-white rounded-b-lg p-4">
+                        <p class="text-terciary font-bold text-xl">New York</p>
+                        <p class="text-terciary text-md">Concrete Jungle</p>
+                    </div>
+                </div>
+                <div class="Card">
+                    <div class="w-full h-3/5 rounded-t-lg bg-norway bg-cover"></div>
+                    <div class="w-full h-2/5 bg-secondary rounded-b-lg p-4">
+                        <p class="text-white font-bold text-xl">Norway</p>
+                        <p class="text-white text-md">Beautiful landscapes</p>
+                    </div>
+                </div>
+
             </div>
+
         </div>
         <div id="rentas_destacadas"></div>
     </section>
