@@ -51,13 +51,19 @@ function usuarioExistente(username, password) {
             usersDatabase[i].username === username &&
             usersDatabase[i].password === password
         ) {
-            
-            
-            console.log("Bienvenido");
+        return true
         }
     }
-    console.log("Error");
-    
+    return false  
 }
 
-usuarioExistente(username,password)
+function signIn(username,password){
+    if(usuarioExistente(username,password)){
+        alert(`Bienvendio a tu cuenta ${username}`)
+        console.log(usersTimeline);
+    }else{
+        alert("Uuuups Usuario o contrasena incorrectos")
+    }
+}
+
+signIn(username,password)
