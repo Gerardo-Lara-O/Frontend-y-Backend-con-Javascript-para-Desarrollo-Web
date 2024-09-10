@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicios usando Dom</title>
+    <style>
+        .nuevo-estilo{
+            color: red;
+            background-color: black;
+        }
+    </style>
+</head>
+<body>
+    <h1>Ejercicios</h1>
+    <ul>
+        <li>
+            <h2>Ejercicio 1</h2>
+            <p id="parrafo1">Hola Mundo</p>
+        </li>
+        <li>
+            <h2>Ejercicio 2</h2>
+            <div class="caja">caja de ejemplo</div>
+        </li>
+        <li>Ejercicio 3
+            <button id="ocultar">Ocultar</button>
+            <button id="mostrar">Mostrar</button>
+            <div id="contenido">Contenido a ocultar/mostrar</div>
+        </li>
+        <li>Ejercicio 4
+            <button id="estiloBoton">Cambiar Estilo</button>
+        </li>
+        <li>Ejercicio 5
+            <ul id="lista">
+                <li>Elemento 1</li>
+                <li>Elemento 2</li>
+            </ul>
+            <button id="agregarElemento">Agregar Elemento</button>
+            <button id="eliminarUltimoElemento">Elimina ultimo Elemento</button>
+        </li>
+        <li>Ejercicio 6
+            <ul id="lista2">
+                <li>Elemento 1</li>
+                <li>Elemento 2</li>
+                <li id="eliminar">Elemento a eliminar</li>
+            </ul>
+        </li>
+
+        <li>Ejercicio 7
+            <p>Objetivo: Selecciona una imagen y cambia su atributo src para mostrar una imagen diferente.</p>
+            <img id="imagen" src="https://img.freepik.com/vector-gratis/ilustracion-icono-vector-dibujos-animados-lindo-gato-sentado-concepto-icono-naturaleza-animal-aislado-premium-vector-estilo-dibujos-animados-plana_138676-4148.jpg?size=338&ext=jpg&ga=GA1.1.2008272138.1725840000&semt=ais_hybrid" alt="Imagen 1">
+            <button id="cambiarImagen">Cambiar Imagen</button>
+        </li>
+
+        <li>Ejercicio 8
+            <p>Objetivo: Escucha un evento change en un campo de entrada (input) y muestra el valor ingresado en un p.</p>
+            <input type="text" id="entrada" placeholder="Escribe algo ...">
+            <p id="salida"></p>
+        </li>
+
+        <li>
+            Ejercicio 9
+            Objetivo: Crea un contador que incremente cada vez que se haga clic en un botón, y muestra el resultado en un span.
+            <button id="contarClics">Clic aqui</button>
+            <p>Clicks: <span id="contador">0</span></p>
+        </li>
+
+        <li>Ejercicio 10
+            <p>Objetivo: Crea una aplicación simple de lista de tareas donde puedas agregar y eliminar elementos de una lista.</p>
+            <input type="text" id="nuevaTarea" placeholder="Agregar nueva tarea">
+            <button id="agregarTarea">AgregarTarea</button>
+            <ul id="listaTareas">
+
+            </ul>
+        </li>
+
+    </ul>
+    
+
+    <script src="./ejercicio.js"></script>
+</body>
+</html>
