@@ -1,5 +1,7 @@
-const input = document.querySelector('#input-id')
-console.dir(input);
+const title = document.getElementById('app-title')
 
+// primera forma
+title.textContent = "Hola, editamos el titulo"
 
-input.value = "Apellido"
+// segunda forma
+title.innerText = "Texto con innerText"
