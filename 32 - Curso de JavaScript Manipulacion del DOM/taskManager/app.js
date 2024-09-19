@@ -29,3 +29,27 @@ function createButton(text,className){
     btn.className = className
     return btn
 }
+
+taskList.addEventListener('click',(event)=>{
+    // cuando usemos la delegacion tenemos que mandar a llamar el evento por que este nos va a ayudar a tener acceso a los elementos de boton para poder tener ciertas propiedades
+    // console.log(event.target);
+    
+    if(event.target.classList.contains('delete-btn')){
+        deleteTask(event.target.parentElement)
+    }else if(event.target.classList.contains('edit-btn')){
+        editTask(event.target.parentElement)
+    }
+})
+
+function deleteTask(taskItem){
+    if(confirm("Estas seguro de borrar este elemento?")){
+        taskItem.remove();
+    }
+}
+
+function editTask(taskItem){
+    const newTask = prompt('Edita la tarea: ', taskItem.firstChild.textContent);
+    if(newTask !== null){
+        taskItem.firstChild.textContent = newTask
+    }
+}

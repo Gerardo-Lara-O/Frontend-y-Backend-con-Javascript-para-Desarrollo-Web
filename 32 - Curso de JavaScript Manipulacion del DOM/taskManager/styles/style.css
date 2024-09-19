@@ -35,6 +35,13 @@ body {
     margin-bottom: 5px;
     border-radius: 5px;
 }
+.delete-btn{
+    cursor: pointer;
+}
+
+.edit-btn{
+    cursor: pointer;
+}
 
 /* Dark theme styles */
 body.dark-theme {
