@@ -2,6 +2,8 @@
 const taskForm = document.getElementById('task-form')
 const taskList = document.getElementById('task-list')
 
+loadTasks();
+
 // Añadimos un event listener para el evento 'submit' del formulario
 // Esto nos permitirá capturar el valor del input cuando se envíe el formulario
 taskForm.addEventListener('submit', (event) => { 
@@ -18,6 +20,7 @@ taskForm.addEventListener('submit', (event) => {
     // Si el campo de la tarea no está vacío, creamos y añadimos la tarea a la lista
     if(task){
         taskList.append(createTaskElement(task)) // Añadimos la tarea a la lista
+        storeTaskInLocalStorage(task)
         taskInput.value = '' // Limpiamos el campo de entrada después de añadir la tarea
     }
 })
@@ -75,4 +78,20 @@ function editTask(taskItem){
         taskItem.firstChild.textContent = newTask // Actualizamos el texto de la tarea con el nuevo valor
     }
 }
+
+function storeTaskInLocalStorage(task) {
+    const tasks = JSON.parse(localStorage.getItem("tasks") || "[]");
+
+    tasks.push(task);
+    localStorage.setItem("tasks", JSON.stringify(tasks));
+}
+
+
+function loadTasks() {
+    const tasks = JSON.parse(localStorage.getItem("tasks") || "[]")
+    tasks.forEach((task) => {
+        taskList.appendChild(createTaskElement(task))
+    })
+}
+
 
